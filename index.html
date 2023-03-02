@@ -11,6 +11,9 @@ html {
   font-family: sans-serif;
   background-color: #F3C563;
 }
+#contact a {
+  color: white;
+}
 #content {
   max-width: 1600px;
   margin: 0 auto;
@@ -23,6 +26,11 @@ html {
   text-decoration: none;
 }
 #blurb { font-weight: bold; font-size: 5em; }
+@media only screen and (max-width: 600px) {
+  #content {
+    padding: 1em;
+  }
+}
     </style>
   </head>
   <body>
@@ -34,7 +42,7 @@ html {
             <h1 id="blurb">Dare to Dream</h1>
 	    <h3>A startup incubator for those who dare to dream</h3>
 	    <h5>By the former Hailo crew</h5>
-	    <h5><a href="mailto:hello@hailo.vc">Say hello</a></h5>
+	    <h5 id="contact"><a href="mailto:hello@hailo.vc">Say hello</a></h5>
 	  </div>
       </div>
   </body>
